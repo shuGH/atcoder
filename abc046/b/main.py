@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-A = int(input())
-A, B = map(int, input().split())
-A = list(map(int, input().split()))
-A = [list(map(int, input().split())) for i in range(N)]
+import sys
+import numpy as np
+from collections import deque as deq
 
+N, K = map(int, input().split())
 
-print('{}'.format())
+print(K * ((K - 1)**(N - 1)))
